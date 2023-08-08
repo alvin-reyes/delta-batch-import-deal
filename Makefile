@@ -10,7 +10,7 @@ all: build
 
 .PHONY: build
 build:
-	go build -tags netgo -ldflags="-s -w -X main.Commit=$(COMMIT) -X main.Version=$(VERSION)" -o dc
+	go build -tags netgo -ldflags="-s -w -X main.Commit=$(COMMIT) -X main.Version=$(VERSION)" -o delta-import
 
 .PHONY: clean
 clean:
